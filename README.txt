@@ -4,12 +4,10 @@ INTALL AND RUN:
 **Remember to npm install
 **Remember to have MongoDB installed (should already be on the OpenStack)
 
-Running server (for OpentStack)
-1)ssh student@134.117.132.192
-2)mongod --port 27017 --dbpath /*repo location*/stock-trader/db
-3)cd /*repo location*/stock-trader/
-4)npm install			
-5)node expressServer	
+1)mongod --port 27017 --dbpath /*repo location*/stock-trader/db
+2)cd /*repo location*/stock-trader/
+3)npm install			
+4)node expressServer	
 
 
 **Following modules used**
