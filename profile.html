@@ -1,0 +1,91 @@
+<html>
+	<head id="profilePageIdent">
+		<link rel="stylesheet" href="stockStyle.css">
+		<title>Profile</title>
+	</head>
+	<body onload="init()">
+		<nav>
+			<a href="home.html" class="navBarLink" id="homeNav">Home</a>
+			<a href="profile.html" class="navBarLink" id="profile">Profile</a>
+			<a href="login.html" class="navBarLink" id="login">Login</a>
+		</nav>
+		<div class="mainDiv">
+			Account Owner: <label id=accName>!NOT LOGGED IN!</label><br>
+			Account Balance: $<label id=currBal>0.00</label><br><br>
+			<input type = "text" id = "deposit/withdraw" value=0.00><br>
+			<button type = "button" id = "depositBalance">Deposit</button>
+			<button type = "button" id = "withdrawBalance">Withdraw</button><br><br>
+			<text class="tableLabel">Owned Stocks</text>
+			<table id="currStocks" class="infoTable">
+				<tr>
+					<th>Symbol</th>
+					<th>Name</th>
+					<th>Prev AVG</th>
+					<th>AVG Price</th>
+					<th>Current Bid</th>
+					<th>Current Asking</th>
+					<th>% Change</th>
+					<th>Trades Today</th>	
+					<th>Owned Shares</th>	
+				</tr>
+			</table><br>
+			<text class="tableLabel">Outstanding Transactions</text>
+			<table id="currentTransactions" class="infoTable">
+				<tr>
+					<th>Symbol</th>
+					<th>Type</th>
+					<th>Price</th>
+					<th>Fulfilled</th>
+					<th>Unfilled</th>
+					<th>End Day Cancel</th>
+					<th>Order ID</th>
+					<th>Select</th>
+				</tr>
+			</table>
+			<button type = "button" id = "cancelTrans">Cancel Selected</button><br><br>
+			<text class="tableLabel">Watched Stocks</text>
+			<table id="watchStocks" class="infoTable">
+				<tr>
+					<th>Symbol</th>
+					<th>Name</th>
+					<th>Prev AVG</th>
+					<th>AVG Price</th>
+					<th>Current Bid</th>
+					<th>Current Asking</th>
+					<th>% Change</th>
+					<th>Trades Today</th>	
+					<th>Select</th>
+				</tr>
+			</table>
+			<button type = "button" id = "removeStock">Remove Watched Selected</button><br><br>
+			<text class="tableLabel">Stocks of Interest</text>
+			<table id="notifiedStocks" class="infoTable">
+				<tr>
+					<th>Symbol</th>
+					<th>Name</th>
+					<th>Prev AVG</th>
+					<th>AVG Price</th>
+					<th>% Change</th>
+					<th>% Change Target</th>
+					<th>Select</th>
+				</tr>
+			</table>
+			<button type = "button" id = "cancelNotification">Remove Notification Selected</button><br><br>
+			Transaction History Search: <input type = "text" id = "historySearch">
+			<table id="historyTable" class="infoTable">
+				<tr>
+					<th>Type</th>
+					<th>Symbol</th>
+					<th>Price</th>
+					<th>Shares Moved</th>
+					<th>Filled</th>
+					<th>Unfilled</th>
+					<th>Completed</th>
+					<th>ID</th>	
+					<th>Date</th>
+				</tr>
+			</table><br>
+		</div>
+	</body>
+	<script src="stockScript.js"></script>
+</html>

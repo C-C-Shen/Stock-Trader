@@ -1,0 +1,69 @@
+<html>
+	<head id="stockPageIdent">
+		<link rel="stylesheet" href="stockStyle.css">
+		<title>Home</title>
+	</head>
+	<nav>
+		<a href="home.html" class="navBarLink" id="homeNav">Home</a>
+		<a href="profile.html" class="navBarLink" id="profile">Profile</a>
+		<a href="login.html" class="navBarLink" id="login">Login</a>
+	</nav>
+	<body onload="init()">
+		<div class="mainDiv">
+			<text>Stock Page</text><br>
+			Current Day: <label id=currDay>Unknown</label><br><br>
+			<button type = "button" id = "addWatch">Add To Watchlist</button>
+			&emsp;&emsp;&emsp;&emsp;<button type = "button" id = "notifyMe">Notify On % Change</button>
+			<input type = "text" id = "changeInPer" value=0.00><br><br><br>
+			<table id="selectedStocks" class="infoTable">
+				<tr>
+					<th>Symbol</th>
+					<th>Name</th>
+					<th>Prev AVG</th>
+					<th>AVG Price</th>
+					<th>Current Bid</th>
+					<th>Current Asking</th>
+					<th>% Change</th>
+					<th>Trades Today</th>	
+				</tr>
+			</table><br>
+			<div style="float: left">
+				<text>Buy Requests:</text>
+				<table id="buyRequestTable" class="requestedTable">
+					<tr>
+						<th>User</th>
+						<th>Price Per</th>
+						<th>Shares</th>
+					</tr>
+				</table><br>
+				<text>Sell Requests:</text>
+				<table id="sellRequestTable" class="requestedTable">
+					<tr>
+						<th>User</th>
+						<th>Price Per</th>
+						<th>Shares</th>
+					</tr>
+				</table><br>
+				Number of Shares: <input type = "text" id = "numShare" value=0><br>
+				&emsp;  Cost Per Share: <input type = "text" id = "costPerShare" value=0.00><br>
+				<button type = "button" id = "buyShares">BUY SHARES</button>
+				<button type = "button" id = "sellShares">SELL SHARES</button><br>
+				Check to cancel at end of day: <input type="checkbox" id = "endDayChk">
+			</div>
+			<div style="float: left">
+				<text style>History:</text><br>
+				<table id="stockHistoryTable" class="infoTable">
+					<tr>
+						<th>Date</th>
+						<th>AVG</th>
+						<th>MIN</th>
+						<th>MAX</th>
+						<th>% Change</th>
+						<th>Trades</th>
+					</tr>
+				</table><br>
+			</div>
+		</div>
+	</body>
+	<script src="stockScript.js"></script>
+</html>

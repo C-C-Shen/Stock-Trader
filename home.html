@@ -1,0 +1,30 @@
+<html>
+	<head id="homePageIdent">
+		<link rel="stylesheet" href="stockStyle.css">
+		<title>Home</title>
+	</head>
+	<nav>
+		<a href="home.html" class="navBarLink" id="homeNav">Home</a>
+		<a href="profile.html" class="navBarLink" id="profile">Profile</a>
+		<a href="login.html" class="navBarLink" id="login">Login</a>
+	</nav>
+	<body onload="init()">
+		<div class="mainDiv">
+			<text>Home</text><br><br>
+			Current Day: <label id=currDay>Unknown</label><br><br>
+			<table id="allStocks" class="infoTable">
+				<tr>
+					<th>Symbol</th>
+					<th>Name</th>
+					<th>Prev AVG</th>
+					<th>AVG Price</th>
+					<th>Current Bid</th>
+					<th>Current Asking</th>
+					<th>% Change</th>
+					<th>Trades Today</th>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="stockScript.js"></script>
+</html>

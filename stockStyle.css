@@ -1,0 +1,43 @@
+body{
+	padding: 20px;
+	background: #d1e4ff;
+}
+
+nav{
+	width: 300px;
+}
+.navBarLink{
+	margin-right: 20px;
+}
+
+.mainDiv{
+	margin-top: 20px;
+}
+
+table{
+	width: 80%;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, tr, td{
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.tableLabel{
+	font-size: 25px;
+	font-weight: bold;
+}
+.infoTable{
+	background: #f0f0f0;
+}
+.requestedTable{
+	width: 60%;
+	background: #f0f0f0;
+}
+
+a{
+	display: inline;
+	font-size: 20px;
+}
