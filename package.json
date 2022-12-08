@@ -4,6 +4,8 @@
   "description": "Christopher Shen\r 101149908\r Stockbroker Website (solo)",
   "main": "expressServer.js",
   "scripts": {
+    "withDB": "node expressServer.js",
+    "noDB": "node expressServerNoDB.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
