@@ -7,7 +7,7 @@ INTALL AND RUN:
 1)mongod --port 27017 --dbpath /*repo location*/stock-trader/db
 2)cd /*repo location*/stock-trader/
 3)npm install			
-4)node expressServer	
+4)npm run withDB OR npm run noDB	
 
 
 **Following modules used**
